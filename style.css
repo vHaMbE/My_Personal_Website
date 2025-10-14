@@ -1,263 +1,52 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.right-menu li
-{
-    display: inline-block;
-    margin-top: 30 px;
-}
-.right-menu li .fa
-{
-    font-size: 20px;
-    margin-right: 10px;
-    cursor: pointer;
-}
-.navbar-brand img
-{
-    width: 70px;
-}
-.header
-{
-    background: white;
-    margin-bottom: 80px;
-    font-size: 20px;
-}
-.navbar
-{
-    padding: 0 35px !important;
+/* Global */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Roboto',sans-serif;}
+body{background:#fff;color:#333;line-height:1.6;}
+html{scroll-behavior:smooth;}
 
-}
-.navbar-toggler
-{
-    border: none !important;
-    outline: none !important;
-    padding: 0 !important;
-    margin-top: 20px;
-}
-.navbar-toggler .fa
-{
-    font-size: 30px;
-    cursor: pointer;
-}
-.banner-img
-{
-    margin: 0 0;
-    width: 90%;
-}
-.banner-img img
-{
-    width: 95%;
-    margin-bottom: -80px;
-}
-.banner
-{
-    position: relative;
+/* Navbar */
+.navbar{padding:15px 50px;background:#fff;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+.navbar-brand img{width:60px;}
+.navbar-nav .nav-link{margin-right:20px;font-weight:500;color:#333;transition:0.3s;}
+.navbar-nav .nav-link:hover,.navbar-nav .nav-link.active{color:#eeb8b8;font-weight:700;}
+.navbar-toggler .fa{font-size:28px;}
 
-}
-.banner-title
-{
-    position: absolute;
-    left: 65%;
-    top: 20%;
-}
-.banner-title h1
-{
-    font-size: 30px;
-    background: rgba(243, 222, 222, 0.75);
-    color: white;
-    line-height: 70px;
-    padding: 0px 10px 0 10px;
-}
+/* Banner */
+.banner{position:relative;text-align:center;padding:120px 20px 80px;color:white;background:url('Images/data-science1.jpg') no-repeat center/cover;}
+.banner::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.4);z-index:0;}
+.banner h1,.banner h3{position:relative;z-index:1;text-shadow:2px 2px 6px rgba(0,0,0,0.6);margin-bottom:15px;}
+.banner h1{font-size:38px;} .banner h3{font-size:22px;font-weight:400;}
 
-/*------heading------*/
-.heading
-{
-    padding: 100px 0;
-}
-.fashion-box
-{
-    margin: 40px;
-}
-.title-style h1
-{
-    padding: 40px 0;
-}
-.title-style
-{
-    margin: 0 auto 80px;
-    height: 120px;
-    width: 50%;
-    max-width: 700px;
-    background: #fff;
-    position: relative;
-    box-shadow: 0 4px 5px 0 grey;
-}
-.title-style::after
-{
-    content: '';
-    height: 100px;
-    width: 190px;
-    background-color: rgba(238, 198, 198, 0.75);
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    z-index: -1;
-}
-.title-style::before
-{
-    content: '';
-    height: 100px;
-    width: 190px;
-    background-color: rgba(238, 198, 198, 0.75);
-    position: absolute;
-    bottom: -10px;
-    right: -10px;
-    z-index: -1;
-}
+/* About Me */
+.about-me{display:flex;flex-wrap:wrap;align-items:center;padding:80px 20px;background:#fff;}
+.about-me img{flex:1;max-width:350px;border-radius:15px;margin-right:40px;}
+.about-me .Data-Science{flex:2;background:rgba(238,198,198,0.15);padding:30px;border-radius:10px;}
 
-/*-------About-Me------*/
+/* Projects */
+.projects{padding:60px 20px;background:#f7f7f7;}
+.projects .col-md-6{margin-bottom:30px;text-align:center;}
+.projects img{border-radius:15px;transition:transform 0.3s,box-shadow 0.3s;width:100%;max-width:300px;}
+.projects img:hover{transform:scale(1.05);box-shadow:0 12px 25px rgba(0,0,0,0.2);}
+.projects h5{margin-top:15px;font-weight:600;}
 
-.About-Me
-{
-    background-color: white;
-    background-size: cover;
-    background-position: center;
-}
-.row
-{
-    margin: initial !important;
-}
-.Data-Science
-{
-    max-width: 700px;
-    margin-top: 150px;
-    padding: 50px;
-    background: rgba(238, 198, 198, 0.75);
-    margin-bottom: 20px;
-    color: white;
-}
-.About-Me img
-{
-    width: 500px;
-    height: 500px;
-    margin: 50px;
-    margin-top: 70px;
-}
+/* Skills */
+.languages-and-skills{padding:60px 20px;}
+.languages-and-skills .col-md-3{text-align:center;margin-bottom:30px;}
+.languages-and-skills img{width:70px;height:70px;border-radius:50%;background:rgba(238,198,198,0.2);padding:15px;transition:transform 0.3s,background 0.3s;}
+.languages-and-skills img:hover{transform:scale(1.1);background:rgba(238,198,198,0.35);}
+.languages-and-skills p{margin-top:15px;font-weight:600;}
 
-/*-------projects------*/
+/* Contact */
+.contact{padding:60px 20px;background:#f7f7f7;text-align:center;}
+.contact a{color:#eeb8b8;font-weight:600;transition:0.3s;}
+.contact a:hover{color:#d97777;text-decoration:underline;}
 
-.projects
-{
-    margin: -50px 0 150px 0;
-}
-.GMO-img
-{
-    margin-top: -50px;
-    height: 300px;
-    width: 350px;
-    display: inline-block;
-}
-.GMO-img img
-{
-    width: 100%;
-    height: 100%;
-}
-.projects h5
-{
-    margin-top: 20px;
-    font-weight: 600;
-}
-/*------languages-and-skills-----*/
-
-.languages-and-skills
-{
-    margin-bottom: 150px;
-}
-.python
-{
-    width: 100px;
-    height: 110px;
-    background: rgba(238, 198, 198, 0.75);
-    border-radius: 40%;
-    margin: 10px auto 10px;
-    box-shadow: 0 2px 40px 0 black;
-}
-.python img
-{
-    width: 50px;
-    margin: 50px auto;
-}
-.languages-and-skills p
-{
-    margin-top: 30px;
-    font-weight: 600;
-}
-
-/*-----Contact-Me-----*/
-
-.Contact-Me
-{
-    margin-bottom: 200px;
-}
-.Contact-Me h5::before
-{
-    content: '';
-    width: 500px;
-    height: 3px;
-    background:rgba(238, 198, 198, 0.75);
-    top: 40px;
-    position: absolute;
-}
-.footer-icon
-{
-    text-align: right;
-}
-V.footer-icon .fa
-{
-    margin: 0 10px auto;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-/*-----for small device-----*/
-
-@media only screen and (max-width:900px)
-{
-    .banner-img
-    {
-        margin: 40px auto;
-        width: 80%;
-    }
-    .banner-title
-    {
-        top: 180px;
-        left: 50%;
-        transform: translateX(50%);
-    }
-    .banner-title h1
-    {
-        font-size: 16px;
-        padding: 5px;
-        line-height: 20px;
-    }
-    .title-style h1
-    {
-        padding: 40px 0;
-        font-size: 25px;
-    }
-    .About-Me
-    {
-        margin-top: 20px !important;
-        margin-bottom: 0 !important;
-    }
-    .footer-icon
-    {
-        text-align: center;
-    
-    }
-    .copyright
-    {
-        text-align: center;
-    }
+/* Responsive */
+@media(max-width:900px){
+    .banner h1{font-size:28px;}
+    .banner h3{font-size:18px;}
+    .navbar{padding:10px 20px;}
+    .about-me{flex-direction:column;text-align:center;}
+    .about-me img{margin:0 0 20px 0;}
+    .about-me .Data-Science{margin:0 auto;}
+    .languages-and-skills img{width:60px;}
 }
