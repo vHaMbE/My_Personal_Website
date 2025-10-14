@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
+    <title>Vhambelani Maelekano - Data Analyst Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -14,80 +14,129 @@
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-    <a class="navbar-brand" href="#"><img src="Images/logo3.png" alt="Logo"></a>
+    <a class="navbar-brand" href="#">Vhambelani_M</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
         <i class="fa fa-bars"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
             <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#skills">Languages & Skills</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
     </div>
 </nav>
 
-<!-- Banner -->
-<section class="banner">
+<!-- Home / Banner -->
+<section id="home" class="banner text-center py-5">
     <h1>Hello, I'm</h1>
-    <h1>Maelekano Vhambelani</h1>
-    <h3>A Data Scientist In The Making</h3>
+    <h1>Vhambelani Maelekano</h1>
+    <h3>Data Analyst in the Making</h3>
+    <a href="#projects" class="btn btn-primary m-2">See My Projects</a>
+    <a href="#contact" class="btn btn-outline-light m-2">Contact Me</a>
 </section>
 
 <!-- About Me -->
-<section id="about" class="about-me">
-    <img src="Images/Vee22.jpg" alt="Vhambelani">
-    <div class="Data-Science">
-        <p>I am Vhambelani Maelekano, a Data Scientist in the making, in love with numbers, analyzing patterns, and figuring out how things work. I discovered this love while studying Mathematics at UL. I am now pursuing formal data science skills with Standard Bank of South Africa and Umuzi Academy.</p>
+<section id="about" class="about-me container py-5">
+    <div class="row align-items-center">
+        <div class="col-md-6 text-center">
+            <img src="Images/Vee22.jpg" alt="Vhambelani" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+            <h2>About Me</h2>
+            <p>Hi, I’m Vhambelani Maelekano, a passionate data enthusiast with a BSc in Mathematics & Physics. I love turning raw data into meaningful insights, discovering patterns, and solving real-world problems. I’m currently upskilling in Python, SQL, Excel, and Power BI to become a professional Data Analyst.</p>
+            <p>I also have experience tutoring and working with numbers, which strengthens my problem-solving skills and attention to detail.</p>
+        </div>
     </div>
 </section>
 
 <!-- Projects -->
-<section id="projects" class="projects">
+<section id="projects" class="projects py-5 bg-light">
+    <h2 class="section-title text-center mb-5">Projects</h2>
     <div class="container">
         <div class="row text-center">
-            <div class="col-md-6">
-                <img src="Images/grow-me-online-logo.gif" alt="GMO Project">
+            <!-- Grow Me Online -->
+            <div class="col-md-6 mb-4">
+                <img src="Images/grow-me-online-logo.gif" alt="GMO Project" class="img-fluid rounded">
                 <h5>Grow Me Online (GMO)</h5>
+                <p>Led a team to manage an online store for 6 months during my Velisa Africa learnership. Acquired new customers, monitored existing customer engagement, and analyzed sales data to identify trends and improve store performance.</p>
             </div>
-            <div class="col-md-6">
-                <img src="Images/design6.png" alt="MUB Project">
-                <h5>Make Umuzi Better (MUB)</h5>
+
+            <!-- Mini Project 1: Excel Dashboard -->
+            <div class="col-md-6 mb-4">
+                <img src="Images/excel-dashboard.png" alt="Excel Dashboard" class="img-fluid rounded">
+                <h5>Excel Dashboard</h5>
+                <p>Created a dynamic household budget dashboard using Excel, including PivotTables, charts, and conditional formatting to visualize expenses and trends.</p>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <!-- Mini Project 2: SQL Analysis -->
+            <div class="col-md-6 mb-4">
+                <img src="Images/sql-project.png" alt="SQL Project" class="img-fluid rounded">
+                <h5>SQL Sales Analysis</h5>
+                <p>Built and queried a mock sales database using SQL to extract insights, aggregate data, and generate performance reports.</p>
+            </div>
+
+            <!-- Mini Project 3: Python Visualization -->
+            <div class="col-md-6 mb-4">
+                <img src="Images/python-visual.png" alt="Python Visualization" class="img-fluid rounded">
+                <h5>Python Data Visualization</h5>
+                <p>Cleaned and visualized survey data using Pandas and Matplotlib, creating bar charts, histograms, and trend analyses to uncover patterns.</p>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <!-- Mini Project 4: Power BI -->
+            <div class="col-md-6 mb-4">
+                <img src="Images/powerbi-dashboard.png" alt="Power BI Project" class="img-fluid rounded">
+                <h5>Power BI Dashboard</h5>
+                <p>Developed an interactive Power BI dashboard to visualize school or business data, applying filters, slicers, and basic DAX functions to create actionable insights.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Languages & Skills -->
-<section id="skills" class="languages-and-skills">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-md-3">
-                <img src="Images/python.png" alt="Python">
-                <p>Python</p>
-            </div>
-            <div class="col-md-3">
-                <img src="Images/sql.png" alt="SQL">
-                <p>SQL</p>
-            </div>
-            <div class="col-md-3">
-                <img src="Images/html.png" alt="HTML">
-                <p>HTML</p>
-            </div>
-            <div class="col-md-3">
-                <img src="Images/css.png" alt="CSS">
-                <p>CSS</p>
-            </div>
+<!-- Skills -->
+<section id="skills" class="languages-and-skills container py-5">
+    <h2 class="section-title text-center mb-5">Skills</h2>
+    <div class="row text-center">
+        <div class="col-md-2 col-6 mb-4">
+            <i class="fa fa-python fa-3x"></i>
+            <p>Python</p>
+        </div>
+        <div class="col-md-2 col-6 mb-4">
+            <i class="fa fa-database fa-3x"></i>
+            <p>SQL</p>
+        </div>
+        <div class="col-md-2 col-6 mb-4">
+            <i class="fa fa-file-excel-o fa-3x"></i>
+            <p>Excel</p>
+        </div>
+        <div class="col-md-2 col-6 mb-4">
+            <i class="fa fa-bar-chart fa-3x"></i>
+            <p>Power BI</p>
+        </div>
+        <div class="col-md-2 col-6 mb-4">
+            <i class="fa fa-line-chart fa-3x"></i>
+            <p>Data Visualization</p>
+        </div>
+        <div class="col-md-2 col-6 mb-4">
+            <i class="fa fa-cogs fa-3x"></i>
+            <p>Data Cleaning</p>
         </div>
     </div>
 </section>
 
 <!-- Contact -->
-<section id="contact" class="contact">
-    <h1>Contact Me</h1>
-    <p>Email: vanessamaelelano@gmail.com</p>
-    <p>Designed with <i class="fa fa-heart"></i> by vHaMbE</p>
+<section id="contact" class="contact container py-5">
+    <h2 class="section-title text-center mb-4">Contact Me</h2>
+    <p class="text-center">Email: <a href="mailto:vmaelekano@gmail.com">vmaelekano@gmail.com</a></p>
+    <p class="text-center">GitHub: <a href="https://github.com/vHaMbE" target="_blank">github.com/vHaMbE</a></p>
+    <p class="text-center">LinkedIn: <a href="https://www.linkedin.com/in/vhambelani-maelekano" target="_blank">linkedin.com/in/vhambelani-maelekano</a></p>
+    <p class="text-center">Designed with <i class="fa fa-heart"></i> by vHaMbE</p>
 </section>
 
 <!-- Smooth scrolling & Active nav -->
@@ -98,7 +147,7 @@ const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 window.addEventListener("scroll", () => {
     let current = "";
     sections.forEach(section => {
-        const sectionTop = section.offsetTop - 100;
+        const sectionTop = section.offsetTop - 90;
         const sectionHeight = section.clientHeight;
         if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
             current = section.getAttribute("id");
