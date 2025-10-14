@@ -1,52 +1,167 @@
 /* Global */
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Roboto',sans-serif;}
-body{background:#fff;color:#333;line-height:1.6;}
-html{scroll-behavior:smooth;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    padding-top: 80px; /* space for fixed navbar */
+}
 
 /* Navbar */
-.navbar{padding:15px 50px;background:#fff;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
-.navbar-brand img{width:60px;}
-.navbar-nav .nav-link{margin-right:20px;font-weight:500;color:#333;transition:0.3s;}
-.navbar-nav .nav-link:hover,.navbar-nav .nav-link.active{color:#eeb8b8;font-weight:700;}
-.navbar-toggler .fa{font-size:28px;}
+.navbar {
+    padding: 15px 50px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+.navbar-brand img {
+    width: 60px;
+}
+.navbar-nav .nav-link {
+    margin-right: 20px;
+    font-weight: 500;
+    color: #333;
+    transition: 0.3s;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #eeb8b8;
+    font-weight: 700;
+}
+.navbar-toggler .fa {
+    font-size: 28px;
+}
 
 /* Banner */
-.banner{position:relative;text-align:center;padding:120px 20px 80px;color:white;background:url('Images/data-science1.jpg') no-repeat center/cover;}
-.banner::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.4);z-index:0;}
-.banner h1,.banner h3{position:relative;z-index:1;text-shadow:2px 2px 6px rgba(0,0,0,0.6);margin-bottom:15px;}
-.banner h1{font-size:38px;} .banner h3{font-size:22px;font-weight:400;}
+.banner {
+    position: relative;
+    text-align: center;
+    padding: 120px 20px 80px 20px;
+    color: white;
+    background: url('Images/data-science1.jpg') no-repeat center/cover;
+}
+.banner::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 0;
+}
+.banner h1, .banner h3 {
+    position: relative;
+    z-index: 1;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+    margin-bottom: 15px;
+}
+.banner h1 { font-size: 38px; }
+.banner h3 { font-size: 22px; font-weight: 400; }
+
+/* Sections */
+section {
+    padding-top: 100px; /* space for fixed navbar */
+    padding-bottom: 60px;
+}
 
 /* About Me */
-.about-me{display:flex;flex-wrap:wrap;align-items:center;padding:80px 20px;background:#fff;}
-.about-me img{flex:1;max-width:350px;border-radius:15px;margin-right:40px;}
-.about-me .Data-Science{flex:2;background:rgba(238,198,198,0.15);padding:30px;border-radius:10px;}
+.about-me {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 60px 20px 80px 20px;
+    background: #fff;
+}
+.about-me img {
+    flex: 1;
+    max-width: 350px;
+    border-radius: 15px;
+    margin-right: 40px;
+}
+.about-me .Data-Science {
+    flex: 2;
+    background: rgba(238,198,198,0.15);
+    padding: 30px;
+    border-radius: 10px;
+}
 
 /* Projects */
-.projects{padding:60px 20px;background:#f7f7f7;}
-.projects .col-md-6{margin-bottom:30px;text-align:center;}
-.projects img{border-radius:15px;transition:transform 0.3s,box-shadow 0.3s;width:100%;max-width:300px;}
-.projects img:hover{transform:scale(1.05);box-shadow:0 12px 25px rgba(0,0,0,0.2);}
-.projects h5{margin-top:15px;font-weight:600;}
+.projects {
+    padding: 60px 20px;
+    background: #f7f7f7;
+}
+.projects .col-md-6 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.projects img {
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    max-width: 300px;
+}
+.projects img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+.projects h5 {
+    margin-top: 15px;
+    font-weight: 600;
+}
 
 /* Skills */
-.languages-and-skills{padding:60px 20px;}
-.languages-and-skills .col-md-3{text-align:center;margin-bottom:30px;}
-.languages-and-skills img{width:70px;height:70px;border-radius:50%;background:rgba(238,198,198,0.2);padding:15px;transition:transform 0.3s,background 0.3s;}
-.languages-and-skills img:hover{transform:scale(1.1);background:rgba(238,198,198,0.35);}
-.languages-and-skills p{margin-top:15px;font-weight:600;}
+.languages-and-skills {
+    padding: 60px 20px;
+}
+.languages-and-skills .col-md-3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.languages-and-skills img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: rgba(238,198,198,0.2);
+    padding: 15px;
+    transition: transform 0.3s, background 0.3s;
+}
+.languages-and-skills img:hover {
+    transform: scale(1.1);
+    background: rgba(238,198,198,0.35);
+}
+.languages-and-skills p {
+    margin-top: 15px;
+    font-weight: 600;
+}
 
 /* Contact */
-.contact{padding:60px 20px;background:#f7f7f7;text-align:center;}
-.contact a{color:#eeb8b8;font-weight:600;transition:0.3s;}
-.contact a:hover{color:#d97777;text-decoration:underline;}
+.contact {
+    padding: 60px 20px;
+    background: #f7f7f7;
+    text-align: center;
+}
+.contact a {
+    color: #eeb8b8;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.contact a:hover {
+    color: #d97777;
+    text-decoration: underline;
+}
 
 /* Responsive */
-@media(max-width:900px){
-    .banner h1{font-size:28px;}
-    .banner h3{font-size:18px;}
-    .navbar{padding:10px 20px;}
-    .about-me{flex-direction:column;text-align:center;}
-    .about-me img{margin:0 0 20px 0;}
-    .about-me .Data-Science{margin:0 auto;}
-    .languages-and-skills img{width:60px;}
+@media (max-width:900px) {
+    .banner h1 { font-size: 28px; }
+    .banner h3 { font-size: 18px; }
+    .navbar { padding: 10px 20px; }
+    .about-me { flex-direction: column; text-align: center; }
+    .about-me img { margin: 0 0 20px 0; }
+    .about-me .Data-Science { margin: 0 auto; }
+    .languages-and-skills img { width: 60px; height: 60px; }
 }
