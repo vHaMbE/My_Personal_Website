@@ -1,116 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vhambelani Maelekano | Data Analyst Portfolio</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vhambelani Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <a class="navbar-brand" href="#">Vhambelani M.</a>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand" href="#">Vhambelani M</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-        <i class="fa fa-bars"></i>
+        <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
+        <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
             <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
             <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
     </div>
 </nav>
 
 <!-- Banner -->
-<section class="banner text-center">
-    <h1 class="banner-title">Hi, I’m Vhambelani Maelekano</h1>
-    <h3 class="banner-subtitle">Data Analyst in the Making</h3>
+<section class="banner">
+    <div class="banner-title">
+        <h1>Hi, I’m Vhambelani Maelekano</h1>
+        <h3>Data Analyst in the Making</h3>
+    </div>
 </section>
 
 <!-- About Me -->
-<section id="about" class="about-me container text-center my-5">
-    <h2 class="section-title">About Me</h2>
+<section id="about" class="about-me container">
     <div class="row align-items-center">
-        <div class="col-md-4">
-            <img src="Images/Vee22.jpg" alt="Vhambelani" class="img-fluid rounded">
+        <div class="col-md-6 text-center">
+            <img src="Images/Vee22.jpg" alt="Vhambelani">
         </div>
-        <div class="col-md-8">
-            <p>Hi, I’m Vhambelani Maelekano — a data enthusiast with a BSc in Mathematics & Physics. I love turning raw data into meaningful insights, discovering patterns, and solving real-world problems. Currently upskilling in data analysis and visualization through Python, SQL, Excel, and Power BI. I also have experience tutoring and mentoring, which strengthens my communication and analytical skills.</p>
+        <div class="col-md-6">
+            <p>Hi, I’m Vhambelani Maelekano, a data enthusiast with a BSc in Mathematics & Physics. I love turning raw data into meaningful insights, discovering patterns, and solving real-world problems. Currently upskilling in Python, SQL, Excel, and Power BI. I also have experience tutoring, helping learners of all ages build confidence in their skills.</p>
         </div>
     </div>
 </section>
 
 <!-- Projects -->
-<section id="projects" class="projects container my-5">
+<section id="projects" class="projects container">
     <h2 class="section-title text-center">Projects</h2>
-    <div class="row">
-        <div class="col-md-6 text-center mb-4">
-            <img src="Images/grow-me-online-logo.gif" alt="Grow Me Online" class="img-fluid rounded">
+    <div class="row text-center">
+        <div class="col-md-6">
+            <img src="Images/grow-me-online-logo.gif" alt="Grow Me Online">
             <h5>Grow Me Online (GMO)</h5>
-            <p>During my learnership at Velisa Africa, I led a team managing an online store for 6 months. We acquired new customers, maintained existing accounts, and ensured a high level of client satisfaction, combining data analysis and team management skills.</p>
-        </div>
-        <div class="col-md-6 text-center mb-4">
-            <img src="Images/excel-dashboard.png" alt="Excel Dashboard" class="img-fluid rounded">
-            <h5>Excel Dashboard</h5>
-            <p>Created a household budget and spending dashboard using Excel with pivot tables, formulas, and charts to visualize personal finances.</p>
-        </div>
-        <div class="col-md-6 text-center mb-4">
-            <img src="Images/sql-analysis.png" alt="SQL Sales Analysis" class="img-fluid rounded">
-            <h5>SQL Sales Analysis</h5>
-            <p>Analyzed mock sales data using SQL queries, including SELECT, JOIN, GROUP BY, and aggregations to generate actionable insights.</p>
-        </div>
-        <div class="col-md-6 text-center mb-4">
-            <img src="Images/python-viz.png" alt="Python Visualization" class="img-fluid rounded">
-            <h5>Python Data Visualization</h5>
-            <p>Cleaned and visualized datasets using Python, Pandas, Matplotlib, and Seaborn, creating histograms, bar charts, and scatter plots.</p>
-        </div>
-        <div class="col-md-6 text-center mb-4">
-            <img src="Images/powerbi-dashboard.png" alt="Power BI Dashboard" class="img-fluid rounded">
-            <h5>Power BI Dashboard</h5>
-            <p>Developed an interactive Power BI report to showcase key metrics with filters, slicers, and basic DAX functions.</p>
+            <p>Managed an online store for 6 months, leading a team to acquire new customers and maintain existing ones, ensuring service satisfaction.</p>
         </div>
     </div>
 </section>
 
 <!-- Skills -->
-<section id="skills" class="languages-and-skills container text-center my-5">
+<section id="skills" class="languages-and-skills container text-center">
     <h2 class="section-title">Skills</h2>
-    <div class="row justify-content-center">
+    <div class="row">
         <!-- Technical Skills -->
-        <div class="col-lg-2 col-md-3 col-6 mb-4">
+        <div class="col-6 col-md-3">
             <i class="fab fa-python fa-3x"></i>
             <p>Python</p>
         </div>
-        <div class="col-lg-2 col-md-3 col-6 mb-4">
+        <div class="col-6 col-md-3">
             <i class="fas fa-database fa-3x"></i>
             <p>SQL</p>
         </div>
-        <div class="col-lg-2 col-md-3 col-6 mb-4">
-            <i class="fas fa-table fa-3x"></i>
+        <div class="col-6 col-md-3">
+            <i class="far fa-file-excel fa-3x"></i>
             <p>Excel</p>
         </div>
-        <div class="col-lg-2 col-md-3 col-6 mb-4">
+        <div class="col-6 col-md-3">
             <i class="fas fa-chart-line fa-3x"></i>
             <p>Power BI</p>
         </div>
-        <div class="col-lg-2 col-md-3 col-6 mb-4">
-            <i class="fas fa-chart-bar fa-3x"></i>
-            <p>Data Visualization</p>
-        </div>
 
-        <!-- Soft/Other Skills -->
-        <div class="col-lg-2 col-md-3 col-6 mb-4">
+        <!-- Soft Skills / Other -->
+        <div class="col-6 col-md-3">
             <i class="fas fa-chalkboard-teacher fa-3x"></i>
-            <p>Online Tutoring</p>
+            <p>Tutoring</p>
         </div>
-        <div class="col-lg-2 col-md-3 col-6 mb-4">
+        <div class="col-6 col-md-3">
             <i class="fas fa-comments fa-3x"></i>
             <p>Communication</p>
         </div>
@@ -118,14 +95,18 @@
 </section>
 
 <!-- Contact -->
-<section id="contact" class="contact container text-center my-5">
+<section id="contact" class="contact container text-center">
     <h2 class="section-title">Contact Me</h2>
     <p>Email: <a href="mailto:vmaelekano@gmail.com">vmaelekano@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/vhambelani-m-93429265/" target="_blank">linkedin.com/in/vhambelani-m-93429265</a></p>
-    <p>GitHub: <a href="https://github.com/vHaMbE" target="_blank">github.com/vHaMbE</a></p>
-    <hr>
-    <p class="copyright">Designed with <i class="fa fa-heart"></i> by Vhambelani Maelekano</p>
+    <p>
+        <a href="Documents/Vhambelani_CV.pdf" download class="btn btn-primary">Download My CV</a>
+    </p>
 </section>
+
+<!-- Footer -->
+<footer class="text-center my-4">
+    <p>Designed with <i class="fa fa-heart"></i> by Vhambelani M</p>
+</footer>
 
 </body>
 </html>
